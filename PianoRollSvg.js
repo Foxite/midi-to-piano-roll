@@ -41,7 +41,7 @@
 				rowSpacing: 48,
 				tracksToRender: { 0: true },
 				trackOptions: {}, // { 1: { transpose: number, style: 'normal' | 'leftHanded' }, ... }
-				staggered: true,
+				staggered: false,
 				splitSVGs: false,
 				trimStart: null,
 				trimEnd: null,

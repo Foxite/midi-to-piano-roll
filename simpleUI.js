@@ -142,7 +142,7 @@
 		ctrl = cfg.querySelector(`.cfg__style`)
 		ctrl.value = config.staggered ? 'staggered' : 'grid'
 		ctrl.addEventListener('change', function(e) {
-			config.staggered = this.value == 'staggered'
+			config.staggered = false
 			updateSVG()
 		})
 	}

@@ -10,7 +10,7 @@
 			removeShorterThan: 4,
 			rowSpacing: 64,
 			splitSVGs: true,
-			staggered: true,
+			staggered: false,
 			timeDivision: 240,
 			title: "Theme Hospital - 6s & 7s",
 			tracksToRender: { 0: true, 3: true },

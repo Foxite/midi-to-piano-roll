@@ -3,7 +3,7 @@
 	const fullSteps = { 0: !0, 5: !0 }
 	const styles = `
 		<style>
-			svg { background-color: #222; }
+			svg { background-color: #2b293f; }
 			.line { stroke: #333; stroke-width: 1px; }
 			.line_verse { stroke: #444; }
 			.line_C { stroke: #aaa; stroke-width: 0px; }

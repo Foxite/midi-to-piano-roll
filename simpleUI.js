@@ -106,7 +106,7 @@
 		let cfg = document.createElement('div')
 		cfg.className = 'cfg'
 		cfg.innerHTML = '<div>'+
-			'<label>Style <select class="cfg__style"><option value="staggered">Staggered - like piano keys</option><option value="grid">Grid - like DAW</option></select></label>'+
+			'<input type="hidden" value="grid" class="cfg__style">'+
 			'<label>Line height <input type="text" class="cfg__lineHeight"/></label>'+
 			'<label>Row spacing <input type="text" class="cfg__rowSpacing"/></label>'+
 			'<label>Width <input type="text" class="cfg__width"/> px</label>'+

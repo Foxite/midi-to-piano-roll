@@ -4,5 +4,5 @@
 
 midi-parser-js@^4.0.4:
   version "4.0.4"
-  resolved "https://registry.yarnpkg.com/midi-parser-js/-/midi-parser-js-4.0.4.tgz#4b0af504e1fdc78409d27fb17473fbb61eee53cc"
+  resolved "https://registry.npmjs.org/midi-parser-js/-/midi-parser-js-4.0.4.tgz"
   integrity sha512-yCCUNemjDET40SPslUbAyi7lClSS+ttcBAWNY337kJouRFsEtIql38Fp4p5xfODkltFvuqHJL9JytnZIrzpJbw==

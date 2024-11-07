@@ -3,18 +3,15 @@
 	const fullSteps = { 0: !0, 5: !0 }
 	const styles = `
 		<style>
-			svg { background-color: #fff; }
-			.line { stroke: #eee; stroke-width: 1px; }
-			.line_verse { stroke: #bbb; }
-			.line_C { stroke: #333; stroke-width: 2px }
-			.line_F { stroke: #333; }
-			.line_blackKey { stroke: #ddd; }
-			.note { fill: #eee; stroke: #000; }
-			.note_black { fill: #666; }
-			.note_staggered { fill-opacity: 0.6; }
-			.note_black_staggered { fill: #000; fill-opacity: 0.5; }
-			.blackRow { fill: #ddd; }
-			.octaveText { font-weight: bold; font-size: 24px; font-family: 'Helvetica Neue', Helvetica, sans-serif; fill: #aaa; }
+			svg { background-color: #222; }
+			.line { stroke: #333; stroke-width: 1px; }
+			.line_verse { stroke: #444; }
+			.line_C { stroke: #aaa; stroke-width: 0px; }
+			.line_F { stroke: #aaa; stroke-width: 0px; }
+			.line_blackKey { stroke: #222; }
+			.note { fill: #eee; stroke: #fff; }
+			.blackRow { fill: #000; }
+			.octaveText { font-weight: bold; font-size: 0px; font-family: 'Helvetica Neue', Helvetica, sans-serif; fill: #aaa; }
 		</style>\n`
 
 	const midiParser = typeof require != 'undefined' ? require('midi-parser-js') : MidiParser
@@ -196,9 +193,6 @@
 					let isBlack = blackKeys[note.note % 12]
 					let classes = [
 						'note',
-						isBlack && 'note_black',
-						cfg.staggered && 'note_staggered',
-						cfg.staggered && isBlack && 'note_black_staggered',
 					].filter(Boolean).join(' ')
 
 					if (note.style == 'leftHanded') {
@@ -214,7 +208,7 @@
 						)
 					} else {
 						group.push(
-							`<rect class="${classes}" ` +
+							`<rect class="${classes}" style="fill-opacity: ${note.velOn}%" ` +
 							`x="${note.time / rowDuration * cfg.width + 0.5}" ` +
 							`y="${this._getYTop(note.note, maxNote) + 0.5}" ` +
 							`width="${note.duration / rowDuration * cfg.width}" ` +
